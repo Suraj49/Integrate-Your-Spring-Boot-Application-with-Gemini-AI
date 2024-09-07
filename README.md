@@ -135,7 +135,7 @@ import java.util.Map;
 public class AppService {
 
     @Autowired
-    GeminiService geminiService;
+    GeminiAIService geminiService;
 
     public ResponseEntity<Object> getResult(Prompt prompt, Parts parts){
         Object response = geminiService.callGeminiAPI(prompt);
